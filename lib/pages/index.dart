@@ -63,7 +63,8 @@ class IndexPageState extends State<IndexPage>
             offset: IDOffset.only(left: 0.2),
             leftChild: leftChild(),
             rightChild: rightChild(),
-            backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+            // scaffoldBackgroundColor
+            // backgroundColor: Theme.of(context).scaffoldBackgroundColor,
             scaffold: Scaffold(
               appBar: MyAppBar(
                 title: widget.nodes[currentIndex].name,

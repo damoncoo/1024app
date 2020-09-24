@@ -49,6 +49,7 @@ class MyApp extends StatelessWidget {
       child: BlocBuilder<ThemeBloc, ThemeState>(
         builder: (context, state) {
           return MaterialApp(
+            debugShowCheckedModeBanner: false,
             home: IndexPage(nodes, initialIndex),
             theme: state.getTheme(),
             themeMode: SpHelper.getThemeMode(),
