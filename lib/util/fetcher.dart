@@ -59,6 +59,7 @@ class Fetcher {
       data: data,
       options: Options(method: method),
     );
+    print(resp.data);
     return parse(resp.data);
   }
 }
